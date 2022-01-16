@@ -1,4 +1,4 @@
-package com.android.hotelbooking;
+package com.android.hotelbooking.Admin;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.android.hotelbooking.R;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -19,34 +20,24 @@ import com.android.volley.toolbox.Volley;
 import java.util.HashMap;
 import java.util.Map;
 
-
-public class SignUp extends AppCompatActivity {
-
-    private EditText userName, userRePassword, userPassword, userEmail;
-
-
+public class AddAdminActivity extends AppCompatActivity {
+    EditText adminName,adminPassword,adminRepassword,adminEmail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
-        intalizeInterface();
-
+        setContentView(R.layout.activity_add_admin);
+        adminName=findViewById(R.id.newAdminName);
+        adminPassword=findViewById(R.id.newAdminPass);
+        adminRepassword=findViewById(R.id.newAdminRePass);
+        adminEmail=findViewById(R.id.newAdminEmail);
     }
 
-    private void intalizeInterface() {
-        userName = findViewById(R.id.userNameSignUp);
-        userPassword = findViewById(R.id.userPasswordSignUp);
-        userEmail = findViewById(R.id.userEmailSignUp);
-        userRePassword = findViewById(R.id.userRePasswordSignUp);
-
-    }
-
-    public void NewSignupMethod(View view) {
-        String name = userName.getText().toString().trim();
-        String email = userEmail.getText().toString().trim();
-        String password = userPassword.getText().toString().trim();
-        String reenterPassword = userRePassword.getText().toString().trim();
-        String URL = "http://192.168.1.8/login/register.php";
+    public void addNewAdminToDB(View view) {
+        String name = adminName.getText().toString().trim();
+        String email = adminEmail.getText().toString().trim();
+        String password = adminPassword.getText().toString().trim();
+        String reenterPassword = adminRepassword.getText().toString().trim();
+        String URL = "http://"+getString(R.string.databaseIp)+"/login/register.php";
         if(!password.equals(reenterPassword)){
             Toast.makeText(view.getContext(), "Password Mismatch", Toast.LENGTH_SHORT).show();
         } else if(!name.equals("") && !email.equals("") && !password.equals("")){
@@ -54,7 +45,7 @@ public class SignUp extends AppCompatActivity {
                 @Override
                 public void onResponse(String response) {
                     if (response.equals("success")) {
-                        Toast.makeText(view.getContext(), "Successfully registered.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(view.getContext(), "Successfully registered,New Admin Was Added.", Toast.LENGTH_SHORT).show();
 
 
                     } else if (response.equals("failure")) {
@@ -73,6 +64,7 @@ public class SignUp extends AppCompatActivity {
                     data.put("name", name);
                     data.put("email", email);
                     data.put("password", password);
+                    data.put("userType", "admin");
                     return data;
                 }
             };
@@ -80,13 +72,14 @@ public class SignUp extends AppCompatActivity {
             RequestQueue requestQueue = Volley.newRequestQueue(view.getContext());
             requestQueue.add(stringRequest);
         }
+
+        BackToAdminPage();
     }
 
-
-
-    public void BackToLoginPage(View view) {
-        Intent intent = new Intent(this, LoginActivity.class);
+    private void BackToAdminPage() {
+        Intent intent = new Intent(this, AdminMainActivity.class);
         startActivity(intent);
         finish();
     }
+
 }

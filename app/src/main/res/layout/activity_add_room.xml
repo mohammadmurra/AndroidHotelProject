@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    tools:context=".Admin.AddRoomActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bookingRoomName"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            style="@style/LabelStyle"
+            android:textColor="@color/white"
+            android:background="@drawable/title"
+            android:gravity="center"
+            android:text="Add New Room Page" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="279dp"
+            app:srcCompat="@drawable/hotelroom" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            tools:context=".HotelRooms.SingelRooms.bookingSingleRoom">
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="450dp"
+                android:layout_height="320dp"
+                android:background="@drawable/pathx"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/addRoomBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="56dp"
+                android:background="@drawable/buttonlogin"
+                android:onClick="AddRoom"
+                android:text="Add New Room"
+                app:layout_constraintBottom_toBottomOf="@+id/view2"
+                app:layout_constraintEnd_toEndOf="@+id/view2"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="@+id/view2"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="337dp"
+                android:layout_height="260dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view2">
+
+                <EditText
+                    android:id="@+id/RoomName"
+                    android:layout_width="284dp"
+                    android:layout_height="47dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Enter New Room Name" />
+
+                <Spinner
+                    android:id="@+id/RoomTypespinner"
+                    android:layout_width="290dp"
+                    android:layout_height="48dp" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

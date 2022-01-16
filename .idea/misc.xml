@@ -4,15 +4,38 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/HotelProjectAndroid/app/src/main/res/drawable-v24/button.xml" value="0.169" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/drawable-v24/title.xml" value="0.1885" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2215" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/drawable/list_item.xml" value="0.1885" />
         <entry key="..\:/HotelProjectAndroid/app/src/main/res/drawable/profile.xml" value="0.169" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout-w936dp/popupDouble.xml" value="0.1721311475409836" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/activity_add_admin.xml" value="0.264" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/activity_add_room.xml" value="0.24010416666666667" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/activity_admin_main.xml" value="0.264" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/activity_booking_delux.xml" value="0.22826086956521738" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/activity_booking_delux_room.xml" value="0.11302083333333333" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/activity_booking_double_room.xml" value="0.11302083333333333" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/activity_booking_single_room.xml" value="0.22826086956521738" />
         <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/activity_delux_room.xml" value="0.22826086956521738" />
         <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/activity_double_room.xml" value="0.22826086956521738" />
         <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/activity_main.xml" value="0.16" />
         <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/activity_main_page.xml" value="0.16799999999999998" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/activity_my_reserved_rooms.xml" value="0.25416666666666665" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/activity_my_room_details.xml" value="0.24010416666666667" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/activity_remove_admin.xml" value="0.25416666666666665" />
         <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/activity_sign_up.xml" value="0.22826086956521738" />
         <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/activity_singel_room.xml" value="0.22826086956521738" />
-        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/activity_single_room.xml" value="0.22826086956521738" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/activity_single_room.xml" value="0.1" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/admin_con.xml" value="0.253125" />
         <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/content_scrolling.xml" value="0.264" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/popup.xml" value="0.22826086956521738" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/popupAdmin.xml" value="0.25416666666666665" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/popupUnreserved.xml" value="0.25416666666666665" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/popup_admin.xml" value="0.25416666666666665" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/popup_unreserved.xml" value="0.17980072463768115" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/popupdelux.xml" value="0.22826086956521738" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/layout/popupdouble.xml" value="0.22826086956521738" />
+        <entry key="..\:/HotelProjectAndroid/app/src/main/res/menu/main_menu.xml" value="0.253125" />
         <entry key="..\:/HotelProjectAndroid/app/src/main/res/xml/network_security_config.xml" value="0.1" />
       </map>
     </option>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.android.hotelbooking" >
+    package="com.android.hotelbooking">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -16,24 +16,89 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HotelBooking"
-        tools:targetApi="31" >
+        tools:targetApi="31">
         <activity
-            android:name=".MainPageActivity"
+            android:name=".Admin.RemoveAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AddRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AddAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminMainActivity"
+            android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".ReservedRoom.MyRoomDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.showPopupWindowAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".ReservedRoom.MyReservedRooms"
+            android:exported="false" />
+        <activity
+            android:name=".HotelRooms.DeluxRooms.bookingDeluxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HotelRooms.DeluxRooms.DeluxRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HotelRooms.SingelRooms.SingleRoomActivity"
+            android:exported="false"
+            android:parentActivityName=".User.MainPageActivity" />
+        <activity
+            android:name=".HotelRooms.SingelRooms.bookingSingleRoom"
+            android:exported="false"
+            android:parentActivityName=".HotelRooms.SingelRooms.SingleRoomActivity" />
+        <activity
+            android:name=".HotelRooms.DoubleRooms.DoubleRoomActivity"
+            android:exported="false"
+            android:parentActivityName=".User.MainPageActivity" />
+        <activity
+            android:name=".HotelRooms.DoubleRooms.bookingDoubleRoom"
+            android:exported="false"
+            android:parentActivityName=".HotelRooms.DoubleRooms.DoubleRoomActivity" />
+        <activity
+            android:name=".HotelRooms.SingelRooms.showPopupWindow"
+            android:exported="false"
+            android:parentActivityName=".HotelRooms.SingelRooms.bookingSingleRoom" />
+        <activity
+            android:name=".HotelRooms.DoubleRooms.showPopupWindowDouble"
+            android:exported="false"
+            android:parentActivityName=".HotelRooms.DoubleRooms.bookingDoubleRoom" />
+        <activity
+            android:name=".ReservedRoom.showPopupWindowUnreserved"
+            android:exported="false" />
+        <activity
+            android:name=".User.MainPageActivity"
             android:exported="true"
             android:label="@string/title_activity_main_page"
             android:theme="@style/Theme.HotelBooking.NoActionBar" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true"
+            android:theme="@style/Theme.HotelBooking.NoActionBar"
+            >
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+
+
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
         </activity>
         <activity
-            android:name=".SignUp"
-            android:exported="true" />
+            android:name=".User.SignUp"
+            android:exported="true"
+            android:theme="@style/Theme.HotelBooking.NoActionBar"/>
     </application>
 
 </manifest>

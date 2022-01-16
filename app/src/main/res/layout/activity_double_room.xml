@@ -18,10 +18,10 @@
                     android:textSize="20dp"
                     android:layout_width="244dp"
                     android:layout_height="wrap_content"
-                    android:text="Available Single Rooms" />
+                    android:text="Available Double Rooms" />
 
                 <TextView
-                    android:id="@+id/numOfRooms"
+                    android:id="@+id/numOfRoomsDouble"
                     style="@style/LabelStyle"
                     android:textSize="20dp"
                     android:layout_width="match_parent"
@@ -31,7 +31,7 @@
             </LinearLayout>
 
             <ListView
-                android:id="@+id/singleRoomList"
+                android:id="@+id/doubleRoomList"
                 android:layout_width="match_parent"
                 android:layout_height="626dp"
                 android:layout_margin="5dp"
